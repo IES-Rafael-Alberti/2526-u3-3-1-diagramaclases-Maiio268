@@ -1,0 +1,26 @@
+@startuml ej_1
+
+class Autor{
+    - nombre:str
+    - apellido:str
+    - nacionalidad:str
+    - fechaNacimiento:int
+
+    + escribir()
+    + getNombreCompleto() : str
+}
+
+class Libro{
+    - titulo:str
+    - isbn:int
+    - numeroPaginas:int
+    - precio:float
+
+    + leer()
+    + getTitulo() : str
+    + getPrecio() : float
+}
+
+Autor "1" -- "1..n" Libro : escribe
+
+@enduml
