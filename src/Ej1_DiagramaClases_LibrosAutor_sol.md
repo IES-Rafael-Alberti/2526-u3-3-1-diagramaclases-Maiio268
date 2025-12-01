@@ -96,14 +96,14 @@ Del análisis del problema, identificamos las siguientes clases:
 * **Nombre de la relación**: "escribe"
 * **Tipo**: **Agregación** (rombo blanco en la clase **Autor**).
 * **Cardinalidad**:
-    * **Autor**: **1** (Cada libro está asociado a un único autor).
+    * **Autor**: **1** (Cada libro es escrito por 1 solo autor).
     * **Libro**: **1..\*** (Un autor puede escribir uno o varios libros).
-* **Justificación**: Esta agregación indica que un **Autor** "tiene" o "escribe" **Libros**. Los libros son conceptualmente parte de la obra total del autor, pero un libro puede existir independientemente (no morir) si eliminamos al Autor del sistema (es decir, el registro del libro persiste).
+* **Justificación**: Indica que un **Autor** "escribe" uno o mas **Libros**. Los libros son obra del autor, pero un libro puede existir independientemente (no morir) si eliminamos al Autor del sistema (es decir, el registro del libro persiste).
 
 
 ## Diagrama de Clases
 
-![diagrama_Ejercicio1](../assets/Ej01.png)
+![Diagrama de clases](../assets/ej1_captura.png)
 
 ## Código PlantUML
 
