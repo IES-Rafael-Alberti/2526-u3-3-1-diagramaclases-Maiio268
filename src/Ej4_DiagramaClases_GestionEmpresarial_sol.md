@@ -1,0 +1,49 @@
+# Solución: Ejercicio 1 - Gestion Empresarial
+## Diagrama de Clases
+
+![Diagrama de Clases](../assets/ej4_captura.png)
+
+## Código PlantUML
+
+```plantuml
+@startuml ej_4
+
+class Empleado {
+    - nombreCompleto:str
+    - fechaNacimiento:data
+    - sueldoBruto:float
+
+    + calcularEdad()
+    + calcularSueldoNeto(sueldoBruto):float
+}
+class Cliente {
+    - nombreCompleto:str
+    - fechaNacimiento:data
+    - numeroTelefono:int
+
+    + calcularEdad()
+}
+class empleadoNormal extends Empleado {
+    
+}
+abstract class empleadoResponsable extends Empleado {
+    
+}
+class Supervisor extends empleadoResponsable {
+}
+
+class JefeDepartamento extends empleadoResponsable {
+}
+
+class Gerente extends empleadoResponsable {
+}
+
+class Empresa {
+    - nombreCorporativo:str
+    - cif:int
+    - direccionFiscal:str
+}
+Cliente "1" --> "1..n" Empresa : pertenece a
+empleadoNormal "1..n" <-- "1" empleadoResponsable : tiene
+@enduml
+```
