@@ -1,3 +1,12 @@
+# Solución: Ejercicio 2 - Cursos Universitarios
+
+## Diagrama de Clases
+
+![Diagrama de Clases](../assets/ej2_captura.png)
+
+## Código PlantUML
+
+```plantuml
 @startuml ej_2
 class Curso {
     - codigo:int
@@ -41,3 +50,4 @@ class Matricula {
 Estudiante "1" -- "1..n" Matricula
 Matricula "1" -- "1" Curso
 @enduml
+```

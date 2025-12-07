@@ -1,0 +1,10 @@
+@startuml ej_1
+
+class Autor {
+    - nombre:strictuml
+    - apellido:str
+    - nacionalidad:str
+    - fechaNacimiento:date
+}
+
+@enduml
