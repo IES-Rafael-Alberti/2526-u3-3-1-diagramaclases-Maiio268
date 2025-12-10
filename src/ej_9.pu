@@ -28,4 +28,3 @@ class Actor extends Persona {
 Director "1" -- "1..n" Pelicula : dirige
 Actor "1..n" - "1..m" Pelicula : participa en
 @enduml
-

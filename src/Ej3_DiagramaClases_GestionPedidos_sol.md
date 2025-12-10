@@ -45,10 +45,6 @@ Del análisis de las especificaciones, identificamos las siguientes clases:
 
 ```
 
-## Implementación en Kotlin
-
-(ESTRUCTURA del codigo de kotlin del diagrama, SIN LA LOGICA)
-
 ## Conceptos Clave de UML Aplicados
 
 1. **Agregación**
@@ -71,67 +67,3 @@ Del análisis de las especificaciones, identificamos las siguientes clases:
 5. **Cardinalidades**
    - 2..* jugadores (mínimo 2, sin límite superior)
    - Validadas en tiempo de ejecución
-
-## Solución: Ejercicio - Autor y Libro
-
-## Análisis del Problema
-
-### Identificación de Clases
-
-Del análisis del problema, identificamos las siguientes clases:
-
-1.  **Autor** 
-    * Representa a la persona que escribe uno o varios libros.
-    * **Atributos**: `nombre` (str), `apellido` (str), `nacionalidad` (str), `fechaNacimiento` (date).
-    * **Métodos**: `escribir()`, `getNombreCompleto()` (derivada).
-
-2.  **Libro** 
-    * Representa una obra escrita por un autor.
-    * **Atributos**: `titulo` (str), `isbn` (str), `numeroPaginas` (int), `precio` (float/int).
-    * **Métodos**: `leer()`, `getTitulo()`, `getPrecio()`.
-
-## Análisis de Relaciones
-
-### 1. Agregación (Autor – Libro)
-* **Nombre de la relación**: "escribe"
-* **Tipo**: **Agregación** (rombo blanco en la clase **Autor**).
-* **Cardinalidad**:
-    * **Autor**: **1** (Cada libro es escrito por 1 solo autor).
-    * **Libro**: **1..\*** (Un autor puede escribir uno o varios libros).
-* **Justificación**: Indica que un **Autor** "escribe" uno o mas **Libros**. Los libros son obra del autor, pero un libro puede existir independientemente (no morir) si eliminamos al Autor del sistema (es decir, el registro del libro persiste).
-
-
-## Diagrama de Clases
-
-![Diagrama de clases](../assets/ej1_captura.png)
-
-## Código PlantUML
-
-```plantuml
-@startuml ej_1
-
-class Autor{
-    - nombre:str
-    - apellido:str
-    - nacionalidad:str
-    - fechaNacimiento:int
-
-    + escribir()
-    + getNombreCompleto() : str
-}
-
-class Libro{
-    - titulo:str
-    - isbn:int
-    - numeroPaginas:int
-    - precio:float
-
-    + leer()
-    + getTitulo() : str
-    + getPrecio() : float {derived}
-}
-
-Autor "1" o-- "1..n" Libro : escribe
-
-@enduml
-```
