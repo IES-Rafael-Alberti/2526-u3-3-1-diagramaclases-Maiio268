@@ -1,0 +1,45 @@
+@startuml ej_3
+
+class Cliente{
+    - nombre:str
+    - direccionEnvio:str
+    - telefono:int
+    - email:str
+
+    + aumentarSaldo()
+
+}
+class Pedido{
+
+}
+
+class Cuenta{
+
+}
+
+class Producto{
+    - stock:int
+}
+
+class TarjetaCredito{
+    - saldoDisponible:double
+}
+
+class pedidoSimple{
+    
+}
+class pedidoCompuesto{
+
+}
+
+Cliente "1" -- "1..n" Cuenta : "tiene"
+Cliente "1" -- "1..n" Pedido : "realiza"
+Cuenta "1" -- "1" TarjetaCredito : "vinculada a"
+
+
+note top of Cliente
+    Para realizar pedido, debe tener 
+    una cuenta con saldo disponible
+end note
+@enduml
+

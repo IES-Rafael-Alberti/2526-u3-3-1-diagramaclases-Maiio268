@@ -1,0 +1,30 @@
+@startuml ej_9
+class Pelicula {
+    - titulo:str
+    - añoEstreno:int
+    - duracionMinutos:int
+    - idiomaOriginal:str
+    + getDuracion()
+    + getDirector()
+    + getActores()
+    + setActores()
+}
+
+class Persona {
+    nombre:str
+    fechaNacimiento:date
+    nacionalidad:str 
+    getEdad()
+}
+
+class Director extends Persona {
+}
+
+class Actor extends Persona {
+    - papel:str
+}
+
+
+Director "1" -- "1..n" Pelicula : dirige
+Actor "1..n" - "1..m" Pelicula : participa en
+@enduml

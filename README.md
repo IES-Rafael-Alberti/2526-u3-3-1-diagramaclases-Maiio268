@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HJqBG45V)
 # Práctica 3.1: Diagrama de clases
 
 Apoyate en los siguientes recursos para realizar la práctica:
@@ -24,23 +25,22 @@ Cada ejercicio en un archivo diferente, con nombre `EjX_DiagramaClases_NombreTem
 # Título de la Actividad
 
 ## Identificación de la Actividad
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
+- **ID de la Actividad:** 3.1. Diagrama de clases
+- **Módulo:** PROG
+- **Unidad de Trabajo:** Tema 5
+- **Fecha de Creación:** 28/11/2025
+- **Fecha de Entrega:** 4/12/2025
 - **Alumno(s):**
-    - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-    - **Correo electrónico:** [Correo electrónico g.educaand.es]
-    - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+    - **Nombre y Apellidos:** Mario Montes Bermudez
+    - **Correo electrónico:** mmonber326@g.educaand.es
+    - **Iniciales del Alumno/Grupo:** MMB
 
 ## Descripción de la Actividad
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
-
+La actividad consiste en realizar los diagramas de clase segun los enunciados y especificaciones de cada uno.
 ## Instrucciones de Compilación y Ejecución
 1. **Requisitos Previos:**
     - [Lenguaje de programación y versión]
-    - [Entorno de desarrollo o dependencias necesarias]
+    - Visual Studio Code
 
 2. **Pasos para Compilar el Código:**
    ```bash
