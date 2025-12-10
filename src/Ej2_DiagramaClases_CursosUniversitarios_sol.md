@@ -1,4 +1,4 @@
-## Solución: Ejercicio - Curso, Profesor, Estudiante y Matrícula
+## Solución: Ejercicio - Cursos Universitarios
 
 ## Análisis del Problema
 
@@ -57,10 +57,7 @@
 ---
 
 ## Diagrama de Clases
-
-
-
----
+![Diagrama de clases](/assets/ej2_captura.png)
 
 ## Código PlantUML
 ```plantuml
@@ -107,3 +104,25 @@ class Matricula {
 Estudiante "1" -- "1..n" Matricula
 Matricula "1" -- "1" Curso
 @enduml
+```
+
+## Conceptos Clave de UML Aplicados
+
+1. **Clase de Asociación (Patrón)**  
+   - La clase Matrícula es clave, pues modela la relación M:N (muchos a muchos) entre Estudiante y Curso.  
+   - Almacena atributos exclusivos de la relación (nota).
+
+2. **Encapsulación**  
+   - Todos los atributos están marcados como privados (-).  
+   - Todos los métodos están marcados como públicos (+).
+
+3. **Cardinalidades**  
+   - Uso de 1..* para indicar que un Profesor o Estudiante debe tener al menos uno o más elementos de la clase asociada.
+
+4. **Responsabilidad Única (SRP)**  
+   - Profesor: gestiona las acciones de enseñanza.  
+   - Estudiante: gestiona las acciones de aprendizaje.  
+   - Matrícula: gestiona los datos de inscripción y rendimiento (nota).
+
+5. **Asociaciones Bidireccionales**  
+   - Las clases pueden acceder mutuamente a la información (Profesor ↔ Curso, Estudiante ↔ Matrícula).

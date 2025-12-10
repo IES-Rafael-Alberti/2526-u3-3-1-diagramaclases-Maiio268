@@ -1,4 +1,4 @@
-## Solución: Ejercicio - Autor y Libro
+## Solución: Ejercicio - Libros Autor
 
 ## Análisis del Problema
 
@@ -33,7 +33,7 @@
 @startuml ej_1
 
 class Autor {
-    - nombre:strictuml
+    - nombre:str
     - apellido:str
     - nacionalidad:str
     - fechaNacimiento:date
